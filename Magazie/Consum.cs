@@ -452,11 +452,6 @@ namespace Magazie
                 }
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
         {
             
