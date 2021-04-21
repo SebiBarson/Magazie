@@ -53,11 +53,6 @@ namespace Magazie
             }
         }
 
-        private void Adauga_pe_stoc_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -86,11 +81,6 @@ namespace Magazie
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
