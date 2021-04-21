@@ -93,13 +93,7 @@ namespace Magazie
             Autentificare a = new Autentificare();
             a.ShowDialog();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
-
+        
         private void valoareToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -157,11 +151,6 @@ namespace Magazie
             load2();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void afisareToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Stoc s = new Stoc();
@@ -178,27 +167,12 @@ namespace Magazie
             load2();
         }
 
-        private void stergereProdusToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void exportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Distribuire_material d = new Distribuire_material();
             d.ShowDialog();
             load1();
             load2();
-        }
-
-        private void exportToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialeDistribuiteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
         private static int Modec(int a, int b)
         {
@@ -245,9 +219,6 @@ namespace Magazie
         {
             return Cipher(input, key, false);
         }
-        private void schimbareParolaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -290,16 +261,7 @@ namespace Magazie
             load1();
             load2();
         }
-
-        private void editareConsumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void alteComenziToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void stergereMaterialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Stergere_material s = new Stergere_material();
