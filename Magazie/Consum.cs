@@ -88,10 +88,6 @@ namespace Magazie
                 suma = suma + (Convert.ToDouble(c["Valoare"]));
             label5.Text = "Valoare totală: " + System.Math.Round(suma,2) + " lei";
         }
-        private void Consum_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -450,11 +446,6 @@ namespace Magazie
                 {
                     MessageBox.Show(ex.Message);
                 }
-        }
-
-        private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
