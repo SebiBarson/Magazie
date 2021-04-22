@@ -17,11 +17,7 @@ namespace Magazie
         {
             InitializeComponent();
         }
-
-        private void Autentificare_Load(object sender, EventArgs e)
-        {
-
-        }
+        
         private static int Modec(int a, int b)
         {
             return (a % b + b) % b;
