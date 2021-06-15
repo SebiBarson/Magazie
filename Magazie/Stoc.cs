@@ -63,10 +63,6 @@ namespace Magazie
                 con.Close();
             }
         }
-        private void Stoc_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -134,9 +130,6 @@ namespace Magazie
                 {
                     MessageBox.Show(ex.Message);
                 }
-                finally
-                {
-                } 
             }
             catch (Exception ex)
             {

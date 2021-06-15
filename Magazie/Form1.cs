@@ -12,7 +12,7 @@ namespace Magazie
 {
     public partial class Form1 : Form
     {
-        public static string conquery = @"Provider=Microsoft.ACE.OleDb.12.0; Data Source=BAZAx.accdb";
+        public static string conquery = @"Provider=Microsoft.ACE.OleDb.12.0; Data Source=BAZAx.accdb";//Access 2007/2010/2013
         OleDbConnection con = new OleDbConnection(conquery);
         public static int consum;
         public static bool f1;
@@ -24,9 +24,19 @@ namespace Magazie
         }
         private void load1()
         {
+			try{
+				con.Open();
+			}catch (Exception ex)
+            {
+                conquery = @"Provider=Microsoft.ACE.OleDb.16.0; Data Source=BAZAx.accdb";//Access 2016
+            }
+			finally
+            {
+                con.Close();
+            }
             try
             {
-                con.Open();
+				con.Open();
                 OleDbCommand cs = new OleDbCommand("SELECT ID, ID_material, Cantitate FROM Stoc WHERE Cantitate<=1 AND Cantitate>0 AND Arhivat=false order by cantitate asc", con);
                 DataTable t_stoc = new DataTable();
                 OleDbDataAdapter a_stoc = new OleDbDataAdapter(cs);
